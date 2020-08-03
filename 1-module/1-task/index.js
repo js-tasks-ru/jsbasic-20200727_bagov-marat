@@ -11,3 +11,5 @@ function factorial(n) {
   }
   return result;
 }
+
+const check = factorial(5);
