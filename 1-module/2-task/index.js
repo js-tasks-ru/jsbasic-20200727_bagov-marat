@@ -1,7 +1,7 @@
 /**
  * Эту функцию трогать не нужно
  */
-let userName = prompt('Введите ваше имя');
+
 function print(text) {
   console.log(text);
 }
@@ -11,7 +11,7 @@ function print(text) {
  * чтобы функция sayHello работала корректно
  */
 function isValid(name) {
-  let objName = userName.split('');
+  let objName = name.split('');
   let spaceInName = objName.find(function(el) {
     return el == ' ';
   });
@@ -28,8 +28,7 @@ function isValid(name) {
  * Эту функцию трогать не нужно
  */
 function sayHello() {
-
-
+  let userName = prompt('Введите ваше имя');
   if (isValid(userName)) {
     print(`Welcome back, ${userName}!`);
   } else {
